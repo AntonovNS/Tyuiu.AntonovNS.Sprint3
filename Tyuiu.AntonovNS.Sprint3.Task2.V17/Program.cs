@@ -24,11 +24,12 @@ namespace Tyuiu.AntonovNS.Sprint3.Task2.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            int startValue = 1, stopValue = 10;
+            double res = ds.GetSumSeries(startValue, stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
