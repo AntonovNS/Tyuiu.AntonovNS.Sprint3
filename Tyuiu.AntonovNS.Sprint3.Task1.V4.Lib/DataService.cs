@@ -6,7 +6,12 @@ namespace Tyuiu.AntonovNS.Sprint3.Task1.V4.Lib
     {
         public double GetSumSeries(int startValue, int stopValue)
         {
-            throw new NotImplementedException();
+            double p = 1;
+            for (int k = startValue; k <= stopValue; k++)
+            {
+                p = p + (Math.Pow(1 / k , 2));
+            }
+            return p;
         }
     }
 }

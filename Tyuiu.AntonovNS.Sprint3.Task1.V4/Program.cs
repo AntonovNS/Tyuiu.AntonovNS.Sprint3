@@ -6,29 +6,27 @@ namespace Tyuiu.AntonovNS.Sprint3.Task1.V4
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.Title = "Спринт #1 | Выполнил: Антонов Н.С. | ИСТНб-24-1";
+            Console.Title = "Спринт #3 | Выполнил: Антонов Н.С. | ИСТНб-24-1";
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("#* Спринт #2                                                              *");
+            Console.WriteLine("#* Спринт #3                                                              *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #15                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Антонов Никита Сергеевич |  ИСТНб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Условие:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
-            Console.WriteLine("* последовательность операций не должна нарушаться) и                     *");
-            Console.WriteLine("* арифметических выражений, которая вернет логическую последовательность  *");
-            Console.WriteLine("* (массив): (False, False, True, True, False, False), при                 *");
-            Console.WriteLine("* x = 3105, y = 275                                                       *");
+            Console.WriteLine("* Написать программу используя цикл while, которая вычисляет сумму ряда   *");
+            Console.WriteLine("* по формуле                                                              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            int startValue = 1, stopValue = 10;
+            double res = ds.GetSumSeries(startValue, stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }

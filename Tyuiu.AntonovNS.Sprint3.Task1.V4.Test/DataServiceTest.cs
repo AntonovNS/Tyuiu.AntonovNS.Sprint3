@@ -7,6 +7,11 @@ namespace Tyuiu.AntonovNS.Sprint3.Task1.V4.Test
         [TestMethod]
         public void ValidGetSumSeries()
         {
+            DataService ds = new DataService();
+            int startValue = 1, stopValue = 10;
+            double res = ds.GetSumSeries(startValue, stopValue);
+            double wait = 2;
+            Assert.AreEqual(wait, res);
         }
     }
 }
