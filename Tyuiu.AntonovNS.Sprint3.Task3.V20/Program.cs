@@ -24,11 +24,13 @@ namespace Tyuiu.AntonovNS.Sprint3.Task3.V20
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            string value = "gfft ntf f opf";
+            char item = 'f';
+            int res = ds.GetCharCount(value, item);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }

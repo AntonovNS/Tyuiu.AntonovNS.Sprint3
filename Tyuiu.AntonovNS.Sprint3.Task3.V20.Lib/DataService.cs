@@ -6,7 +6,15 @@ namespace Tyuiu.AntonovNS.Sprint3.Task3.V20.Lib
     {
         public int GetCharCount(string value, char item)
         {
-            throw new NotImplementedException();
+            int count = 0;
+            foreach (char chr in value) 
+            {
+                if (chr == item) 
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
