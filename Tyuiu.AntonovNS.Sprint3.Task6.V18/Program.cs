@@ -24,11 +24,12 @@ namespace Tyuiu.AntonovNS.Sprint3.Task6.V18
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            int startValue = 9, stopValue = 18 ;
+            double res = ds.GetSumTheDivisors(startValue, stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }

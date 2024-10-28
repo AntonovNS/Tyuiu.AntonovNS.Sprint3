@@ -6,7 +6,18 @@ namespace Tyuiu.AntonovNS.Sprint3.Task6.V18.Lib
     {
         public int GetSumTheDivisors(int startValue, int stopValue)
         {
-            throw new NotImplementedException();
+            int p = 0;
+            for (int k = startValue; k <= stopValue; k++)
+            {
+                for (int d = 1; d <= k; d++)
+                {
+                    if (k % d == 0 && d < 10) 
+                    {
+                        p += d;
+                    }
+                }
+            }
+            return p;
         }
     }
 }
