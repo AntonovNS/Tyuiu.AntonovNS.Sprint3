@@ -24,11 +24,12 @@ namespace Tyuiu.AntonovNS.Sprint3.Task4.V8
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-
+            int startValue = -5, stopValue = 5;
+            double res = ds.Calculate(startValue, stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(res);
             Console.ReadKey();
         }
     }
