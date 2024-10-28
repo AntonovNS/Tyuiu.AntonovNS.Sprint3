@@ -10,7 +10,7 @@ namespace Tyuiu.AntonovNS.Sprint3.Task4.V8.Test
             DataService ds = new DataService();
             int startValue = -5, stopValue = 5;
             double res = ds.Calculate(startValue, stopValue);
-            double wait = 2237,227;
+            double wait = 2237.227;
             Assert.AreEqual(wait, res);
         }
     }
