@@ -6,10 +6,10 @@ namespace Tyuiu.AntonovNS.Sprint3.Task0.V14.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double p = 0;
+            double p = 1;
             for (int k = startValue; k <= stopValue; k++)
             {
-                p = p + (Math.Pow(1 / (Math.Pow(k, value)), -1));
+                p = p * (Math.Pow(1 / (Math.Pow(k, value)), -1));
             }
             return p;
         }
