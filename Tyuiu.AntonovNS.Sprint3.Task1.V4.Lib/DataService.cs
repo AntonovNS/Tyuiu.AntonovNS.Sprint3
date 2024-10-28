@@ -6,12 +6,13 @@ namespace Tyuiu.AntonovNS.Sprint3.Task1.V4.Lib
     {
         public double GetSumSeries(int startValue, int stopValue)
         {
-            double p = 1;
+            double p = 0;
             for (int k = startValue; k <= stopValue; k++)
             {
-                p = p + (Math.Pow(1 / k , 2));
+                
+                p = p + Math.Pow(((double)1 / k ), 2);
             }
-            return p;
+            return Math.Round(p,2);
         }
     }
 }
